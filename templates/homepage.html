@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Site Teste Diogo</title>
     <ul>
-        <li><a href="https://deploysitetest-production.up.railway.app/" class="mymenu" title="Home">Home</a>
-            <a href="sobre.html" class="mymenu" title="Sobre">Sobre</a>
-            <a href="portfolio.html" class="mymenu" title="Portfolio">Portfolio</a>
-            <a href="contatos.html" class="mymenu" title="Contato">Contato</a>
+        <li><a href="{{ url_for('homepage') }}" class="mymenu" title="Home">Home</a>
+            <a href="{{ url_for('sobre') }}" class="mymenu" title="Sobre">Sobre</a>
+            <a href="{{ url_for('portfolio') }}" class="mymenu" title="Portfolio">Portfolio</a>
+            <a href="{{ url_for('contato') }}" class="mymenu" title="Contato">Contato</a>
+            <a href="{{ url_for('usuarios') }}" class="mymenu" title="usuarios">Contato</a>
         </li>
     </ul>
 </head>
