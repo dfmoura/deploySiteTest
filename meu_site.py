@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-# route -> hashtagtreinamentos.com/
+# route -> teste.com/
 # função -> o que você quer exibir naquela página
 # template
 
@@ -12,6 +12,14 @@ def homepage():
 @app.route("/contatos")
 def contatos():
     return render_template("contatos.html")
+
+@app.route("/portfolio")
+def contatos():
+    return render_template("portfolio.html")
+
+@app.route("/sobre")
+def contatos():
+    return render_template("sobre.html")
 
 @app.route("/usuarios/<nome_usuario>")
 def usuarios(nome_usuario):
