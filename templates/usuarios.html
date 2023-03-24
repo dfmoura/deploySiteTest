@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Perfil Usuario</title>
-    <ul>
-      <li>
-        <a href="{{ url_for('homepage') }}" class="mymenu" title="Home">Home</a>
-        <a href="{{ url_for('sobre') }}" class="mymenu" title="Sobre">Sobre</a>
-        <a href="{{ url_for('portfolio') }}" class="mymenu" title="Portfolio">Portfolio</a>
-        <a href="{{ url_for('contato') }}" class="mymenu" title="Contato">Contato</a>
-        <a href="{{ url_for('usuarios') }}" class="mymenu" title="usuarios">Contato</a>
-      </li>
+  <meta charset="UTF-8">
+  <title>Perfil Usuario</title>
+  <ul>
+    <li>
+      <a href="https://deploysitetest-production.up.railway.app/">Home</a>
+      <a href="https://deploysitetest-production.up.railway.app/sobre.html" class="mymenu" title="Sobre">Sobre</a>
+      <a href="{{ url_for('portfolio') }}" class="mymenu" title="Portfolio">Portfolio</a>
+      <a href="{{ url_for('contato') }}" class="mymenu" title="Contato">Contato</a>
+      <a href="{{ url_for('usuarios') }}" class="mymenu" title="usuarios">Contato</a>
+    </li>
   </ul>
 </head>
+
 <body>
   <p>Meu nome de usuário é: {{ nome_usuario }}</p>
 </body>
-</html> 
+
+</html>
