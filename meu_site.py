@@ -14,11 +14,11 @@ def contatos():
     return render_template("contatos.html")
 
 @app.route("/portfolio")
-def contatos():
+def portfolio():
     return render_template("portfolio.html")
 
 @app.route("/sobre")
-def contatos():
+def sobre():
     return render_template("sobre.html")
 
 @app.route("/usuarios/<nome_usuario>")
@@ -28,6 +28,3 @@ def usuarios(nome_usuario):
 # colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)
-
-    # servidor do heroku 
-
